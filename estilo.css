@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+body{
+    background: #e3f2fd!important;
+}
+
+
+/*MODO OSCURO*/
+body.dark {
+    background: #00001b !important;
+  }
+
+body.dark .espacio .fas {
+    color: #007bff;
+}
+ñ
+
+body.dark .espacio h4 {
+    color: #9B9B9B;
+}
+
+body.dark .espacio p {
+    color: #9B9B9B;
+}
+
+body.dark .logo h1 {
+    color: #9B9B9B;
+}
+
+body.dark header .categorias a.activo {
+    color: #007bff;
+}
+
+body.dark hr.rgba-white-light {
+    background: #007bff;
+}
+
+body.dark .landing .jumbotron {
+    color: #9B9B9B;
+}
+
+/*MODO OSCURO*/ 
+
+
+
+
+
+h1{
+    font-size: 45px !important;
+}
+
+/*cambia de color el fondo del menu*/
+.navbar{
+    background:#22425800;
+    box-shadow: 0 1px 1px 0 rgba(48, 61, 73, 0.438);
+    min-height: 100px 0;
+}
+/*pone fondo al texto delñ menu*/
+.nav-link{
+    color: rgba(255, 254, 254, 0.918);
+}
+/*pone fondo al texto del menu al pasa el mause*/
+.nav-link:hover{
+    color: rgb(141, 223, 255);
+}   
+
+/*tamaño del icono hamburguesa*/
+.navbar-toggler{
+    font-size: 35px;
+}
+/*ocuata el color que se da al momento de hacer clikc en el icono*/
+.navbar-toggler:focus{
+    outline: none;
+}
+/*cambias de color el color del icono*/
+.fas {
+    color: #00bd15;
+}
+
+
+/*boton switch para modo oscuro y claro de website*/
+.switch {
+    background: rgb(49, 69, 138);
+    border-radius: 100px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    outline: none;
+  }
+
+.switch .fas{
+    color: white;
+}
+
+  /*ocuata el color que se da al momento de hacer clikc en el icono*/
+.switch:focus{
+    outline: none;
+}
+  
+  .switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  /*cambia el color del fondo del icono noche e dia*/
+  .switch.active {
+    background: rgb(253, 72, 0);
+    color: #000;
+  }
+  
+  .switch.active::after {
+    right: 0;
+    left: unset;
+  }
+  
+  .switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: rgb(27, 27, 27);
+  }
+  
+
+/*imagen de fondo del header*/
+.fondo{width: 100%;
+    height: 100vh;
+    background-position: center;
+background: url('imagenes/fondo1.jpg') no-repeat center center/cover;
+
+}
+/*efecto degradado para el fondo de header*/
+.fondo::before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 0.733));
+}
+
+/*el texto que esta encima de la imagen cambia de color a blanco*/
+.texto-centrado{
+    padding: 75px 0;
+    color: antiquewhite;
+}
+
+/*Acá editas el texto y tamaño del titulo en movimiento*/
+.contenedor-texto .titulo {
+    font-size: 60px;    
+    margin: 120px 0 0 0;
+    
+    
+}
+
+/*Acá editas el texto y tamaño del titulo en movimiento*/
+.contenedor-texto .efecto {
+    font-weight: bold;
+    color: #00ff15;
+    font-style: normal;
+}
+
+/*Acá editas el texto y tamaño del titulo en movimiento*/
+.contenedor-texto p {
+    margin-bottom: 40px;
+    line-height: 36px;
+    margin: 26px 183px;
+}
+
+.img-about{
+        width: 100%;
+        height: 93vh;
+        background-position: center;
+    background: url('imagenes/roma.jpg') no-repeat center center/cover;
+ 
+    
+}
+
+.ftco-about ul.about-info li {
+      list-style: none;
+      margin-bottom: 10px; }
+
+.ftco-about ul.about-info li span:first-child {
+          font-weight: 600;
+          color: #000000;
+          width: 130px; }
+
+          .ftco-section {
+            padding: 7em 0;
+            position: relative; }
+
+
+
+@media (max-width: 767.98px) {
+    .ftco-section {
+        padding: 6em 0; } }     
+        
+        
+
+/*imagen de fondo del header*/
+.fondo{
+    background-position: center;
+}
+/*efecto degradado para el fondo de header*/
+.fondo::before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.733));
+}
+
+/*el texto que esta encima de la imagen cambia de color a blanco*/
+.texto-centrado{
+    padding: 100px 0;
+    color: antiquewhite;
+}
+
+/*Acá editas el texto y tamaño del titulo en movimiento*/
+.contenedor-texto .titulo {
+    font-size: 60px;    
+    margin: 70px 0 0 0;
+    
+}
+
+/*Acá editas el texto y tamaño del titulo en movimiento*/
+.contenedor-texto .efecto {
+    font-weight: bold;
+    color: #00ff15;
+    font-style: normal;
+}
+
+/*Acá editas el texto y tamaño del titulo en movimiento*/
+.contenedor-texto p {
+    margin-bottom: 40px;
+    line-height: 36px;
+    margin: 26px 120px;
+}        
+
+.voto {
+    left: 10px;
+    margin: auto;
+}
+
+/*------------------------------------------------------*/
+
+@media (max-width: 500px) {
+    .ftco-section {
+        padding: 6em 0; } }     
+        
+/*Acá editas el texto y tamaño del titulo en movimiento*/
+.contenedor-texto .titulo {
+    font-size: 40px;    
+    margin: 65px 0 0 0;
+    
+}
+
+
+/*Acá editas el texto y tamaño del titulo en movimiento*/
+.contenedor-texto p {
+    margin-bottom: 40px;
+    line-height: 22px;
+    margin: 26px 23px;
+}        
+
+
+/*------------------------------------------------------*/
+
+@media (max-width: 320px) {
+        
+/*Acá editas el texto y tamaño del titulo en movimiento*/
+.contenedor-texto .titulo {
+    font-size: 40px;    
+    margin: 10px 0 0 0;
+    
+}
+
+
+/*Acá editas el texto y tamaño del titulo en movimiento*/
+.contenedor-texto p {
+    margin-bottom: 40px;
+    line-height: 22px;
+    margin: 26px 13px;
+}        
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------*/
+
+.opciones .fas{
+    font-size: 30px;
+    color: rgb(2, 0, 63);
+}
+            
+
+.espacio{
+    margin: 43px 0 20px 0;
+}
+
+
+
+
+
+/*CATEGORIA*/
+
+
+.contenedor1 {
+    width: 100%;
+    margin: auto;
+    padding: 10px;   
+}
+
+/* ------------------------- */
+/* HEADER */
+/* ------------------------- */
+
+header {
+	padding: 40px 0;
+}
+
+header .logo {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+header .logo p {
+	color: #9B9B9B;
+}
+
+header form {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+header .barra-busqueda {
+	width: 60%;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	padding: 0 20px;
+	border-radius: 100px;
+	border: none;
+	text-align: center;
+	font-size: 16px;
+}
+
+header .categorias {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+header .categorias a {
+	color: #9B9B9B;
+	margin: 10px 20px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+header .categorias a.activo {
+	color: #000;
+}
+
+/* ------------------------- */
+/* Grid */
+/* ------------------------- */
+
+.grid {
+	position: relative;
+	width: 100%;
+	opacity: 0;
+	transition: opacity 0.5s linear 1s;
+}
+
+.grid.imagenes-cargadas {
+	opacity: 1;
+}
+
+.grid .item {
+	position: absolute;
+	display: block;
+	padding: 0;
+	margin: 10px;
+	width: calc(20% - 20px);
+}
+
+.grid .item-contenido {
+	position: relative;
+}
+
+.grid .item img {
+	width: 100%;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+.contenedor1-img {
+	position: relative;
+}
+
+/* ------------------------- */
+/* Mediaqueries */
+/* ------------------------- */
+@media screen and (max-width: 700px) {
+	.grid .item {
+		width: calc(50% - 20px);
+	}
+
+	header .barra-busqueda {
+		width: 70%;
+	}
+}
+
+
+/*landing*/
+
+.landing{
+    
+background: url('imagenes/fondo1.jpg') no-repeat center center/cover;
+    }
+
+.landing .jumbotron{
+    padding: 100px 20px;
+    text-align: center;
+    background: #ccf2ffe3;
+    border-radius: 1px;
+    margin: 60px 0;
+    color: #404040;
+
+}
+
+.my-4 {
+    margin-bottom: 1.5rem!important;
+    background: white;
+}
+
+/*BLOG*/
+.img1 .card {
+    background: #d6dde3;
+    padding: 6px;
+    margin: 10px 0;
+}
+.img1 img {
+    width: 100% ;
+    background: #d6dde3;
+    cursor: pointer;
+}
+
+
+
+/*CONTENEDOR CATEGORIA BLOG*/
+
+
+
+
+
+/*Footer*/
+
+.contact { 
+    background: #d0ecff;
+    padding: 50px;
+    margin: 76px 0;
+}
+
+.list-unstyled p {
+    color: #6c757d;
+}
+
+.textwidget p{
+    color: #6c757d;
+}
+
+.color-text {
+    color: antiquewhite;
+}
+
+  

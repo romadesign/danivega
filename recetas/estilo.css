@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+body{
+    background: #e3f2fd!important;
+}
+
+
+/*MODO OSCURO*/
+body.dark {
+    background: #00001b !important;
+  }
+
+body.dark .espacio .fas {
+    color: #007bff;
+}
+
+
+body.dark .espacio h4 {
+    color: #9B9B9B;
+}
+
+body.dark .espacio p {
+    color: #9B9B9B;
+}
+
+body.dark .logo h1 {
+    color: #9B9B9B;
+}
+
+body.dark header .categorias a.activo {
+    color: #007bff;
+}
+
+body.dark hr.rgba-white-light {
+    background: #007bff;
+}
+
+body.dark .landing .jumbotron {
+    color: #9B9B9B;
+}
+
+/*MODO OSCURO*/ 
+
+
+
+
+
+h1{
+    font-size: 45px !important;
+}
+
+/*cambia de color el fondo del menu*/
+.navbar{
+    background:#22425800;
+    box-shadow: 0 1px 1px 0 rgba(48, 61, 73, 0.438);
+    min-height: 100px 0;
+}
+/*pone fondo al texto delñ menu*/
+.nav-link{
+    color: rgba(255, 254, 254, 0.918);
+}
+/*pone fondo al texto del menu al pasa el mause*/
+.nav-link:hover{
+    color: rgb(141, 223, 255);
+}   
+
+/*tamaño del icono hamburguesa*/
+.navbar-toggler{
+    font-size: 35px;
+}
+/*ocuata el color que se da al momento de hacer clikc en el icono*/
+.navbar-toggler:focus{
+    outline: none;
+}
+/*cambias de color el color del icono*/
+.fas {
+    color: #00bd15;
+}
+
+
+/*boton switch para modo oscuro y claro de website*/
+.switch {
+    background: rgb(49, 69, 138);
+    border-radius: 100px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    outline: none;
+  }
+
+.switch .fas{
+    color: white;
+}
+
+  /*ocuata el color que se da al momento de hacer clikc en el icono*/
+.switch:focus{
+    outline: none;
+}
+  
+  .switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  /*cambia el color del fondo del icono noche e dia*/
+  .switch.active {
+    background: rgb(253, 72, 0);
+    color: #000;
+  }
+  
+  .switch.active::after {
+    right: 0;
+    left: unset;
+  }
+  
+  .switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: rgb(27, 27, 27);
+  }
+  
+
+/*imagen de fondo del header*/
+.fondo{width: 100%;
+    height: 100vh;
+    background-position: center;
+background: url('imagenes/fondo1.jpg') no-repeat center center/cover;
+
+}
+/*efecto degradado para el fondo de header*/
+.fondo::before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 0.733));
+}
+
+/*el texto que esta encima de la imagen cambia de color a blanco*/
+.texto-centrado{
+    padding: 75px 0;
+    color: antiquewhite;
+}
+
+/*Acá editas el texto y tamaño del titulo en movimiento*/
+.contenedor-texto .titulo {
+    font-size: 60px;    
+    margin: 120px 0 0 0;
+    
+    
+}
+
+/*Acá editas el texto y tamaño del titulo en movimiento*/
+.contenedor-texto .efecto {
+    font-weight: bold;
+    color: #00ff15;
+    font-style: normal;
+}
+
+/*Acá editas el texto y tamaño del titulo en movimiento*/
+.contenedor-texto p {
+    margin-bottom: 40px;
+    line-height: 36px;
+    margin: 26px 183px;
+}
+
+
+
+
+
+
+.expe {
+    padding: 25px 0;
+}
+
+.text-contenido {
+    position: absolute;
+    left: 22px;
+    right: 22px;
+}
+
+
+
+/*.light-bg {
+    background-color: #faf6fb;
+}*/
+
+.tab-content {
+    border-bottom-right-radius: 3px;	
+    border-bottom-left-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.164);
+    box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.04);
+    padding: 2rem;
+}
+
+.table-sm td, .table-sm th {
+    padding: 0.2rem;
+}
+
+
+.espacio-tabla {
+    margin: 20px 0;
+}
+
+.nav-tabs .nav-link.active {
+    color: #000000 !important;
+    background-color:rgba(155, 155, 155, 0.03) !important;
+    border-color: rgba(155, 155, 155, 0.03) rgba(155, 155, 155, 0.03) rgba(219, 219, 219, 0) !important;
+}
+
+/* color raya de preparación*/
+.nav-tabs {
+    border-bottom: 1px solid #fffdfd49 !important;
+}
+
+
+/*boton check*/
+label {
+    display: inline-block;
+    margin-bottom: 0.0rem !important ;
+}
+
+/*color de tabla*/
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(155, 155, 155, 0.03) !important;
+}
+
+
+
+
+
+
+
+@media (max-width: 767.98px) {
+    .ftco-section {
+        padding: 6em 0; } }     
+        
+        
+/*Acá editas el texto y tamaño del titulo en movimiento*/
+.contenedor-texto p {
+    margin-bottom: 40px;
+    line-height: 36px;
+    margin: 26px 120px;
+}        
+ñ
+.voto {
+    left: 10px;
+    margin: auto;
+}
+
+/*------------------------------------------------------*/
+
+@media (max-width: 500px) {
+    .ftco-section {
+        padding: 6em 0; } }     
+        
+/*Acá editas el texto y tamaño del titulo en movimiento*/
+.contenedor-texto .titulo {
+    font-size: 40px;    
+    margin: 65px 0 0 0;
+    
+}
+
+
+/*Acá editas el texto y tamaño del titulo en movimiento*/
+.contenedor-texto p {
+    margin-bottom: 40px;
+    line-height: 22px;
+    margin: 26px 23px;
+}        
+
+
+/*------------------------------------------------------*/
+
+@media (max-width: 320px) {
+        
+/*Acá editas el texto y tamaño del titulo en movimiento*/
+.contenedor-texto .titulo {
+    font-size: 40px;    
+    margin: 10px 0 0 0;
+    
+}
+
+
+/*Acá editas el texto y tamaño del titulo en movimiento*/
+.contenedor-texto p {
+    margin-bottom: 40px;
+    line-height: 22px;
+    margin: 26px 13px;
+}        
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*Footer*/
+
+.contact { 
+    background: #d0ecff;
+    padding: 50px;
+    margin: 76px 0;
+}
+
+.list-unstyled p {
+    color: #6c757d;
+}
+
+.textwidget p{
+    color: #6c757d;
+}
+
+.color-text {
+    color: antiquewhite;
+}
+
+  
